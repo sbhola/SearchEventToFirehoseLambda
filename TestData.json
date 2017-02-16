@@ -1,0 +1,44 @@
+{
+    "CorrelationId": "e2652491-5696-4160-bb56-caff188ee25d",
+    "HotelSearchQuery": {
+        "Bounds": {
+            "Center": {
+                "Latitude": 49.0097,
+                "Longitude": 2.5479
+            },
+            "RadiusKm": 50.0
+        },
+        "Filters": [],
+        "IncludeHotelsWithoutRates": false,
+        "SessionId": "8b0c5bea-048d-4ab1-903a-41ee6b5b6df8",
+        "TenantId": "demo",
+        "PosId": "101",
+        "Currency": "USD",
+        "StayPeriod": {
+            "Start": "2017-03-15T00:00:00",
+            "End": "2017-03-19T00:00:00"
+        },
+        "RoomOccupancies": [
+            {
+                "Occupants": [
+                    {
+                        "Type": "Adult",
+                        "Age": 25
+                    },
+                    {
+                        "Type": "Adult",
+                        "Age": 25
+                    }
+                ]
+            }
+        ],
+        "TravellerCountryCodeOfResidence": "US",
+        "TravellerNationalityCode": "US",
+        "Culture": "en-US"
+    },
+    "IsSearchPartial": false,
+    "TimeTakenInMilliSec": 14070.7185,
+    "Id": null,
+    "Type": null,
+    "TimeStamp": "0001-01-01T00:00:00"
+}
