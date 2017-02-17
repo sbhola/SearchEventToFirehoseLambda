@@ -27,6 +27,7 @@
 --reference:C:\Users\sbhola\.nuget\packages\System.Collections.Concurrent\4.0.12\ref\netstandard1.3\System.Collections.Concurrent.dll
 --reference:C:\Users\sbhola\.nuget\packages\System.Collections.Immutable\1.2.0\lib\netstandard1.0\System.Collections.Immutable.dll
 --reference:C:\Users\sbhola\.nuget\packages\System.Collections.NonGeneric\4.0.1\ref\netstandard1.3\System.Collections.NonGeneric.dll
+--reference:C:\Users\sbhola\.nuget\packages\System.Collections.Specialized\4.0.1\ref\netstandard1.3\System.Collections.Specialized.dll
 --reference:C:\Users\sbhola\.nuget\packages\System.ComponentModel\4.0.1\ref\netstandard1.0\System.ComponentModel.dll
 --reference:C:\Users\sbhola\.nuget\packages\System.ComponentModel.Annotations\4.1.0\ref\netstandard1.4\System.ComponentModel.Annotations.dll
 --reference:C:\Users\sbhola\.nuget\packages\System.Console\4.0.0\ref\netstandard1.3\System.Console.dll
@@ -94,8 +95,12 @@
 --reference:C:\Users\sbhola\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\sbhola\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\sbhola\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\EngineWebCaller.cs
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Extensions.cs
 d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Program.cs
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Contracts\IWebClient.cs
 d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Models\GeoRegion.cs
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Models\GetResultsRequest.cs
 d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Models\HotelSearchQuery.cs
 d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Models\RoomOccupancy.cs
 d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Models\SearchEvent.cs
@@ -103,3 +108,8 @@ d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Models\StayPeriod.cs
 d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Translators\CircleTranslator.cs
 d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Translators\GeoCodeTranslator.cs
 d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\Translators\GeoRegionTranslator.cs
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\WebClient\Constants.cs
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\WebClient\Extensions.cs
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\WebClient\WebClient.cs
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\WebClient\WebClientRequestMessage.cs
+d:\WorkSpace\Visual Studio code\SampleSearchEventLambda\WebClient\WebClientResponseMessage.cs

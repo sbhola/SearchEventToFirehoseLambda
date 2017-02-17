@@ -29,6 +29,13 @@ namespace SearchLambdaFunction
                 eventEntry = Deserialize(reader);
             }
             Console.WriteLine(eventEntry.CorrelationId);
+            var webCaller = new EngineWebCaller();
+            await webCaller.GetSearchResults(Extensions.ToGetResultsRequest(eventEntry));
+
+            //ToDo:
+            //Call BE search results paginated
+            //parse it to data models for firehose streams
+            //push data to firehose
 
             return inputStream;
         }
@@ -38,14 +45,8 @@ namespace SearchLambdaFunction
             JsonSerializerSettings settings = new JsonSerializerSettings();
             JsonConverter[] converters = { new GeoRegionTranslator(), new CircleTranslator(), new GeoCodeTranslator() };
             settings.Converters = converters;
+            return JsonConvert.DeserializeObject<SearchEvent>(reader.ReadToEnd(), settings);
 
-            var testObj = JsonConvert.DeserializeObject<SearchEvent>(reader.ReadToEnd(), settings);
-
-
-            var serializer = new Newtonsoft.Json.JsonSerializer();
-            var testObj2 = (SearchEvent)serializer.Deserialize(reader, typeof(SearchEvent));
-
-            return testObj;
         }
 
     }
