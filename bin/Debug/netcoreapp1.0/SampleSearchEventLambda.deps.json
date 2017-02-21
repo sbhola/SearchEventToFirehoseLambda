@@ -1,15 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "b07710510450ccde31b0d2e5482d59bb7da0304a"
+    "signature": "7929e8fc0d1192e798a94847830156c3619ecadd"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.0": {
       "SampleSearchEventLambda/1.0.0": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.7.1",
-          "AWSSDK.S3": "3.3.5.2",
+          "AWSSDK.Core": "3.3.8",
+          "AWSSDK.KinesisFirehose": "3.3.1.2",
           "Newtonsoft.Json": "9.0.1",
           "System.Collections.Specialized": "4.0.1"
         },
@@ -17,7 +17,7 @@
           "SampleSearchEventLambda.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.7.1": {
+      "AWSSDK.Core/3.3.8": {
         "dependencies": {
           "System.Collections.NonGeneric": "4.0.1"
         },
@@ -25,12 +25,12 @@
           "lib/netstandard1.3/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.S3/3.3.5.2": {
+      "AWSSDK.KinesisFirehose/3.3.1.2": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.7.1"
+          "AWSSDK.Core": "3.3.8"
         },
         "runtime": {
-          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+          "lib/netstandard1.3/AWSSDK.KinesisFirehose.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -67,15 +67,15 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/3.3.7.1": {
+    "AWSSDK.Core/3.3.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8rhss2QJ5xZJZgdq8xQrNyVDwSijIWhDY/crc9S+GFHCnwRDA321Et0ZGdao3QtVyN2rl2suxxeYYfDJYK+1VA=="
+      "sha512": "sha512-sDEABDAYvdjkXk9bNHzMbxmN+ubpr8YhaKlZgAhNs5N8dptVKaFTvPq9dK3/bDHxDGYJGSJcNFJ9FobUh/tsWg=="
     },
-    "AWSSDK.S3/3.3.5.2": {
+    "AWSSDK.KinesisFirehose/3.3.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tf7lTPSGz2kwvxaLPsm8tVqmHQ1RD4o0qq+2SXL49pzSs/6rULY/4RRf1JkRRtxFPh26fXuicfYc7AvNvn3lFw=="
+      "sha512": "sha512-2dlUe9BubDjdghWGVyrkXzOmMn1CU36dCex352qqaFWCefwYKToFwnPEUasYnKgj298QBjh7KSa3zWz8lDLUqA=="
     },
     "Newtonsoft.Json/9.0.1": {
       "type": "package",

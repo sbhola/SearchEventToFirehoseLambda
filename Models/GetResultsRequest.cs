@@ -1,20 +1,20 @@
 using System;
 
-namespace Models
+namespace Models.Request
 {
     public class GetResultsRequest
     {
         public string SessionId { get; set; }
 
-        public PagingInfo PagingInfo { get; set; }
+        public Paging Paging { get; set; }
 
         public string Currency { get; set; }
 
     }
 
-    public class PagingInfo
+    public class Paging
     {
-        public int PageNumber { get; set; }
+        public int PageNo { get; set; }
 
         public int PageSize { get; set; }
     }

@@ -1,6 +1,11 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 using System.Threading.Tasks;
+using Amazon;
+using Amazon.KinesisFirehose;
+using Amazon.KinesisFirehose.Model;
+using Amazon.Runtime;
 using Models;
 using Newtonsoft.Json;
 using Translators;
@@ -21,23 +26,28 @@ namespace SearchLambdaFunction
             }).GetAwaiter().GetResult();
         }
 
-        public async Task<Stream> SearchEventHandler(Stream inputStream)
+        public async Task SearchEventHandler(Stream inputStream)
         {
             SearchEvent eventEntry;
             using (var reader = new StreamReader(inputStream))
             {
                 eventEntry = Deserialize(reader);
             }
-            Console.WriteLine(eventEntry.CorrelationId);
+
             var webCaller = new EngineWebCaller();
-            await webCaller.GetSearchResults(Extensions.ToGetResultsRequest(eventEntry));
+            var hotels = await webCaller.GetSearchResults(Extensions.ToGetResultsRequest(eventEntry));
+            var searchDetails = Extensions.GetInitSearchRequestDetails(eventEntry);
+            var resultDetails = Extensions.GetInitSearchResultDetails(hotels);
 
-            //ToDo:
-            //Call BE search results paginated
-            //parse it to data models for firehose streams
-            //push data to firehose
+            var firehoseClient = new FirehoseClient();
 
-            return inputStream;
+            await firehoseClient.InsertSearchRequestDetails(searchDetails);
+
+            foreach (var result in resultDetails)
+            {
+                result.SessionId = searchDetails.SessionId;
+                await firehoseClient.InsertSearchResultDetails(result);
+            }
         }
 
         private SearchEvent Deserialize(TextReader reader)
@@ -48,6 +58,5 @@ namespace SearchLambdaFunction
             return JsonConvert.DeserializeObject<SearchEvent>(reader.ReadToEnd(), settings);
 
         }
-
     }
 }

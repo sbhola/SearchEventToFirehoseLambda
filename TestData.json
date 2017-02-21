@@ -10,7 +10,7 @@
         },
         "Filters": [],
         "IncludeHotelsWithoutRates": false,
-        "SessionId": "700cb250-6cb5-4890-a48f-d36c57daa17f",
+        "SessionId": "5e0f8600-d40a-496c-9b81-e3a53a6918a2",
         "TenantId": "demo",
         "PosId": "101",
         "Currency": "USD",
@@ -40,5 +40,5 @@
     "TimeTakenInMilliSec": 14070.7185,
     "Id": null,
     "Type": null,
-    "TimeStamp": "0001-01-01T00:00:00"
+    "TimeStamp": "2017-03-15T00:00:00"
 }

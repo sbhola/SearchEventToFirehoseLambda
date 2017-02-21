@@ -1,7 +1,13 @@
 namespace WebClient
 {
     internal static class Constants
-    {
+    {        
+        internal static class SearchResultsUrls
+        {
+            internal static readonly string StageUrl = "https://public-be.stage.oski.io/hotel/v1.0/search/results";
+        }
+
+
         internal static class HttpMethod
         {
             internal static readonly string GET = "GET";

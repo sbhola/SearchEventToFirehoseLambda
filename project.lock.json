@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
-      "AWSSDK.Core/3.3.7.1": {
+      "AWSSDK.Core/3.3.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -35,16 +35,16 @@
           "lib/netstandard1.3/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.S3/3.3.5.2": {
+      "AWSSDK.KinesisFirehose/3.3.1.2": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.7, 3.4.0)"
+          "AWSSDK.Core": "[3.3.8, 3.4.0)"
         },
         "compile": {
-          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+          "lib/netstandard1.3/AWSSDK.KinesisFirehose.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+          "lib/netstandard1.3/AWSSDK.KinesisFirehose.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -2152,12 +2152,12 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.3.7.1": {
-      "sha512": "8rhss2QJ5xZJZgdq8xQrNyVDwSijIWhDY/crc9S+GFHCnwRDA321Et0ZGdao3QtVyN2rl2suxxeYYfDJYK+1VA==",
+    "AWSSDK.Core/3.3.8": {
+      "sha512": "sDEABDAYvdjkXk9bNHzMbxmN+ubpr8YhaKlZgAhNs5N8dptVKaFTvPq9dK3/bDHxDGYJGSJcNFJ9FobUh/tsWg==",
       "type": "package",
-      "path": "AWSSDK.Core/3.3.7.1",
+      "path": "AWSSDK.Core/3.3.8",
       "files": [
-        "AWSSDK.Core.3.3.7.1.nupkg.sha512",
+        "AWSSDK.Core.3.3.8.nupkg.sha512",
         "AWSSDK.Core.nuspec",
         "lib/MonoAndroid10/AWSSDK.Core.XML",
         "lib/MonoAndroid10/AWSSDK.Core.dll",
@@ -2195,33 +2195,33 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.S3/3.3.5.2": {
-      "sha512": "tf7lTPSGz2kwvxaLPsm8tVqmHQ1RD4o0qq+2SXL49pzSs/6rULY/4RRf1JkRRtxFPh26fXuicfYc7AvNvn3lFw==",
+    "AWSSDK.KinesisFirehose/3.3.1.2": {
+      "sha512": "2dlUe9BubDjdghWGVyrkXzOmMn1CU36dCex352qqaFWCefwYKToFwnPEUasYnKgj298QBjh7KSa3zWz8lDLUqA==",
       "type": "package",
-      "path": "AWSSDK.S3/3.3.5.2",
+      "path": "AWSSDK.KinesisFirehose/3.3.1.2",
       "files": [
-        "AWSSDK.S3.3.3.5.2.nupkg.sha512",
-        "AWSSDK.S3.nuspec",
-        "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
-        "lib/MonoAndroid10/AWSSDK.S3.XML",
-        "lib/MonoAndroid10/AWSSDK.S3.dll",
-        "lib/MonoTouch10/AWSSDK.S3.XML",
-        "lib/MonoTouch10/AWSSDK.S3.dll",
-        "lib/MonoTouch10/AWSSDK.S3.pdb",
-        "lib/Xamarin.iOS10/AWSSDK.S3.XML",
-        "lib/Xamarin.iOS10/AWSSDK.S3.dll",
-        "lib/net35/AWSSDK.S3.XML",
-        "lib/net35/AWSSDK.S3.dll",
-        "lib/net35/AWSSDK.S3.pdb",
-        "lib/net45/AWSSDK.S3.XML",
-        "lib/net45/AWSSDK.S3.dll",
-        "lib/net45/AWSSDK.S3.pdb",
-        "lib/netstandard1.3/AWSSDK.S3.dll",
-        "lib/netstandard1.3/AWSSDK.S3.pdb",
-        "lib/netstandard1.3/AWSSDK.S3.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.pdb",
+        "AWSSDK.KinesisFirehose.3.3.1.2.nupkg.sha512",
+        "AWSSDK.KinesisFirehose.nuspec",
+        "analyzers/dotnet/cs/AWSSDK.KinesisFirehose.CodeAnalysis.dll",
+        "lib/MonoAndroid10/AWSSDK.KinesisFirehose.XML",
+        "lib/MonoAndroid10/AWSSDK.KinesisFirehose.dll",
+        "lib/MonoTouch10/AWSSDK.KinesisFirehose.XML",
+        "lib/MonoTouch10/AWSSDK.KinesisFirehose.dll",
+        "lib/MonoTouch10/AWSSDK.KinesisFirehose.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.KinesisFirehose.XML",
+        "lib/Xamarin.iOS10/AWSSDK.KinesisFirehose.dll",
+        "lib/net35/AWSSDK.KinesisFirehose.XML",
+        "lib/net35/AWSSDK.KinesisFirehose.dll",
+        "lib/net35/AWSSDK.KinesisFirehose.pdb",
+        "lib/net45/AWSSDK.KinesisFirehose.XML",
+        "lib/net45/AWSSDK.KinesisFirehose.dll",
+        "lib/net45/AWSSDK.KinesisFirehose.pdb",
+        "lib/netstandard1.3/AWSSDK.KinesisFirehose.dll",
+        "lib/netstandard1.3/AWSSDK.KinesisFirehose.pdb",
+        "lib/netstandard1.3/AWSSDK.KinesisFirehose.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.KinesisFirehose.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.KinesisFirehose.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.KinesisFirehose.pdb",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -6989,8 +6989,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "AWSSDK.Core >= 3.3.7.1",
-      "AWSSDK.S3 >= 3.3.5.2",
+      "AWSSDK.Core >= 3.3.8",
+      "AWSSDK.KinesisFirehose >= 3.3.1.2",
       "Newtonsoft.Json >= 9.0.1",
       "System.Collections.Specialized >= 4.0.1"
     ],
